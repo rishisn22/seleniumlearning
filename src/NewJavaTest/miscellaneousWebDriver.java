@@ -18,8 +18,6 @@ public class miscellaneousWebDriver {
 		// ChromeOptions options = new ChromeOptions();
 		// options.setAcceptInsecureCerts(true);
 		
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\Rishi\\Downloads\\chromedriver_win32\\chromedriver.exe");
-		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		
@@ -33,7 +31,9 @@ public class miscellaneousWebDriver {
 		//Takes Screenshot
 		
 		File  src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src,new File("C:\\Users\\Rishi\\Desktop\\New folder\\Screenshot.png"));
+		FileUtils.copyFile(src,new File("C:\\Users\\rishu\\Downloads\\screenshot.png"));
+		
+		
 		
 				
 	}
