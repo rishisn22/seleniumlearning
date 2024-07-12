@@ -1,12 +1,10 @@
 package NewJavaTest;
 
-import java.util.List;
+
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class assignment7 {
@@ -34,8 +32,16 @@ System.setProperty("webdriver.chrome.driver","C:\\Users\\Rishi\\Downloads\\chrom
 		System.out.println("No. of rows = "+column);
 		
 		//Scenario3
-	    String text = driver.findElement(By.xpath("//table [@class = \"table-display\"]//tr[3]")).getText();
+	    String text = driver.findElement(By.xpath("//table [@class = 'table-display']//tr[3]")).getText();
 	    System.out.println(text);
+
+		//Scenario4
+		String text2 = driver.findElement(By.xpath("//table [@class = 'table-display']//tr[3]")).getText();
+		System.out.println(text2);
+
+		//Scenario4
+		String text3 = driver.findElement(By.xpath("//table [@class = 'table-display']//tr[3]")).getText();
+		System.out.println(text3);
 		
 	}
 }
