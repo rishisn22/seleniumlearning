@@ -39,9 +39,20 @@ System.setProperty("webdriver.chrome.driver","C:\\Users\\Rishi\\Downloads\\chrom
 		String text2 = driver.findElement(By.xpath("//table [@class = 'table-display']//tr[3]")).getText();
 		System.out.println(text2);
 
-		//Scenario4
+		//Scenario5
 		String text3 = driver.findElement(By.xpath("//table [@class = 'table-display']//tr[3]")).getText();
 		System.out.println(text3);
+
+		//Scenario6
+		String text4 = driver.findElement(By.xpath("//table [@class = 'table-display']//tr[3]")).getText();
+		System.out.println(text4);
+
+		//Scenario7
+		String text5 = driver.findElement(By.xpath("//table [@class = 'table-display']//tr[3]")).getText();
+		System.out.println(text5);
+
+
+		
 		
 	}
 }
